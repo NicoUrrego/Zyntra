@@ -39,7 +39,7 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#Usos-header">
+              <a className="nav-link" href="#usos-header">
                 Usos incorrectos
               </a>
             </li>

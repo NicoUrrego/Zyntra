@@ -4,7 +4,8 @@
 
 /* Contenedor principal */
 .navbar {
-  position: relative;
+  position: sticky;
+  top: 0;
   overflow: hidden;
   background-color: #030301;
   min-height: 75px;
