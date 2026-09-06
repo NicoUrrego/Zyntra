@@ -1,0 +1,846 @@
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+.logotipo {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 110px 7vw 80px;
+
+  box-sizing: border-box;
+
+  background-color: #030301;
+  color: #f2f2f2;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.logotipo-header {
+  display: grid;
+
+  grid-template-columns: 120px 1fr 320px;
+
+  gap: 40px;
+
+  align-items: end;
+
+  margin-bottom: 100px;
+}
+
+
+.logotipo-index {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #0fff95;
+}
+
+
+.logotipo-title {
+  padding-left: 30px;
+
+  border-left: 2px solid #119da4;
+}
+
+
+.logotipo-title p {
+  margin: 0 0 12px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  color: #119da4;
+}
+
+
+.logotipo-title h1 {
+  margin: 0;
+
+  font-size: clamp(70px, 10vw, 160px);
+
+  line-height: 0.8;
+
+  font-weight: 800;
+
+  letter-spacing: -7px;
+
+  text-transform: uppercase;
+}
+
+
+.logotipo-intro {
+  max-width: 320px;
+}
+
+
+.logotipo-intro p {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: #f2f2f2;
+
+  opacity: 0.7;
+}
+
+
+/* =========================
+   LOGO DISPLAY
+========================= */
+
+.logo-display {
+  margin-bottom: 20px;
+
+  border: 1px solid rgba(242, 242, 242, 0.25);
+
+  background-color: #030301;
+}
+
+
+.logo-display-top,
+.logo-display-bottom {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 15px 20px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #119da4;
+}
+
+
+.logo-display-bottom {
+  color: #f2f2f2;
+
+  opacity: 0.5;
+
+  border-top: 1px solid rgba(242, 242, 242, 0.15);
+}
+
+
+.logo-placeholder {
+
+  min-height: 600px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* Líneas decorativas */
+
+.logo-placeholder::before,
+.logo-placeholder::after {
+
+  content: "";
+
+  position: absolute;
+
+  background-color: #119da4;
+
+  opacity: 0.2;
+}
+
+
+.logo-placeholder::before {
+
+  width: 100%;
+  height: 1px;
+
+  top: 50%;
+  left: 0;
+}
+
+
+.logo-placeholder::after {
+
+  height: 100%;
+  width: 1px;
+
+  left: 50%;
+  top: 0;
+}
+
+
+.logo-placeholder-content {
+
+  position: relative;
+
+  z-index: 2;
+
+  width: 260px;
+  height: 260px;
+
+  border: 1px dashed #119da4;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 20px;
+
+  background-color: #030301;
+}
+
+
+.placeholder-small {
+
+  font-size: 9px;
+
+  letter-spacing: 4px;
+
+  color: #119da4;
+}
+
+
+.placeholder-symbol {
+
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #0fff95;
+
+  color: #0fff95;
+
+  font-size: 40px;
+
+  font-weight: 200;
+}
+
+
+.placeholder-text {
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+
+/* =========================
+   GRID DE TARJETAS
+========================= */
+
+.logo-info-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+
+  gap: 18px;
+}
+
+
+/* Distribución */
+
+.logo-card-large {
+  grid-column: span 7;
+}
+
+.logo-card-turquoise {
+  grid-column: span 5;
+}
+
+.logo-card-neon {
+  grid-column: span 5;
+}
+
+.logo-card-dark {
+  grid-column: span 7;
+}
+
+.logo-card-outline {
+  grid-column: span 5;
+}
+
+.logo-card-blue {
+  grid-column: span 7;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.logo-card {
+
+  min-height: 480px;
+
+  padding: 35px;
+
+  box-sizing: border-box;
+
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.logo-card:hover {
+
+  transform: translateY(-7px);
+}
+
+
+/* Colores */
+
+.logo-card-large {
+
+  background-color: #f2f2f2;
+
+  color: #030301;
+}
+
+
+.logo-card-turquoise {
+
+  background-color: #119da4;
+
+  color: #f2f2f2;
+}
+
+
+.logo-card-neon {
+
+  background-color: #0fff95;
+
+  color: #030301;
+}
+
+
+.logo-card-dark {
+
+  background-color: #030301;
+
+  color: #f2f2f2;
+
+  border: 1px solid rgba(242, 242, 242, 0.3);
+}
+
+
+.logo-card-outline {
+
+  background-color: #030301;
+
+  color: #f2f2f2;
+
+  border: 1px solid #119da4;
+}
+
+
+.logo-card-blue {
+
+  background-color: #19647e;
+
+  color: #f2f2f2;
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.logo-card-number {
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  opacity: 0.6;
+}
+
+
+.logo-card-content {
+
+  width: 100%;
+}
+
+
+.logo-card-label {
+
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+
+.logo-card-content h2 {
+
+  margin: 0 0 30px;
+
+  font-size: clamp(35px, 4vw, 65px);
+
+  line-height: 0.9;
+
+  letter-spacing: -3px;
+
+  text-transform: uppercase;
+}
+
+
+.logo-card-content p {
+
+  max-width: 520px;
+
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  opacity: 0.75;
+}
+
+
+.logo-card-line {
+
+  width: 100%;
+
+  height: 1px;
+
+  margin-bottom: 20px;
+
+  background-color: currentColor;
+
+  opacity: 0.3;
+}
+
+
+/* =========================
+   CONSTRUCCIÓN
+========================= */
+
+.construction-placeholder {
+
+  width: 100%;
+
+  min-height: 130px;
+
+  margin-top: 30px;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  border: 1px dashed rgba(3, 3, 1, 0.5);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+}
+
+
+.construction-placeholder span {
+
+  font-size: 50px;
+
+  font-weight: 200;
+}
+
+
+.construction-placeholder p {
+
+  font-size: 12px;
+
+  max-width: 250px;
+
+  opacity: 0.7;
+}
+
+
+/* =========================
+   ÁREA DE SEGURIDAD
+========================= */
+
+.safe-area-placeholder {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  min-height: 170px;
+
+  margin: 20px 0;
+}
+
+
+.safe-area-box {
+
+  width: 180px;
+  height: 120px;
+
+  border: 1px dashed #0fff95;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  position: relative;
+}
+
+
+.safe-area-box::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 160px;
+
+  border: 1px solid rgba(15, 255, 149, 0.2);
+}
+
+
+.safe-area-box span {
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #0fff95;
+}
+
+
+/* =========================
+   TAMAÑO
+========================= */
+
+.size-placeholder {
+
+  margin: 25px 0;
+}
+
+
+.size-logo {
+
+  width: 160px;
+  height: 70px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px dashed #119da4;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #119da4;
+}
+
+
+.size-line {
+
+  width: 160px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-top: 8px;
+
+  padding-top: 8px;
+
+  border-top: 1px solid #119da4;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   VERSIONES
+========================= */
+
+.versions {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+
+  margin-top: 25px;
+}
+
+
+.version {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+
+.version-placeholder {
+
+  height: 100px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border: 1px dashed rgba(242, 242, 242, 0.4);
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+}
+
+
+.version span {
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+
+  opacity: 0.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.logotipo-footer {
+
+  margin-top: 100px;
+}
+
+
+.footer-line {
+
+  width: 100%;
+
+  height: 1px;
+
+  background-color: #119da4;
+}
+
+
+.footer-content {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding-top: 15px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+.footer-content p {
+
+  margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .logotipo {
+
+    padding: 80px 5vw;
+  }
+
+
+  .logotipo-header {
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 60px;
+  }
+
+
+  .logotipo-title {
+
+    padding-left: 20px;
+  }
+
+
+  .logotipo-title h1 {
+
+    font-size: clamp(60px, 14vw, 110px);
+
+    letter-spacing: -4px;
+  }
+
+
+  .logotipo-intro {
+
+    max-width: 500px;
+  }
+
+
+  .logo-placeholder {
+
+    min-height: 450px;
+  }
+
+
+  .logo-card-large,
+  .logo-card-turquoise,
+  .logo-card-neon,
+  .logo-card-dark,
+  .logo-card-outline,
+  .logo-card-blue {
+
+    grid-column: span 12;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .logotipo {
+
+    padding: 60px 20px;
+  }
+
+
+  .logo-display-top,
+  .logo-display-bottom {
+
+    font-size: 7px;
+
+    padding: 12px;
+  }
+
+
+  .logo-placeholder {
+
+    min-height: 350px;
+  }
+
+
+  .logo-placeholder-content {
+
+    width: 210px;
+    height: 210px;
+  }
+
+
+  .logo-card {
+
+    min-height: 380px;
+
+    padding: 25px;
+  }
+
+
+  .logo-card-content h2 {
+
+    letter-spacing: -2px;
+  }
+
+
+  .versions {
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .version-placeholder {
+
+    height: 80px;
+  }
+
+
+  .footer-content {
+
+    font-size: 7px;
+  }
+
+}
+
+.logo-real {
+  width: min(500px, 70%);
+  height: auto;
+  object-fit: contain;
+}
