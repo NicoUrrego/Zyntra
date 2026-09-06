@@ -5,7 +5,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container">
 
-        <img src="src/imagenes/Zyntra-redondo-verde.jpg" alt="Logo de Zyntra"/>
+        <img src="src/imagenes/zyntra-logo.png" alt="Logo de Zyntra"/>
 
         <button
           className="navbar-toggler"
