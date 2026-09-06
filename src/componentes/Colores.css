@@ -1,0 +1,709 @@
+/* =========================
+   CONTENEDOR
+========================= */
+
+.colores {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 110px 7vw 80px;
+
+  box-sizing: border-box;
+
+  background-color: #030301;
+  color: #f2f2f2;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.colores-header {
+
+  display: grid;
+
+  grid-template-columns: 120px 1fr 320px;
+
+  gap: 40px;
+
+  align-items: end;
+
+  margin-bottom: 80px;
+}
+
+
+.colores-index {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #0fff95;
+}
+
+
+.colores-title {
+
+  padding-left: 30px;
+
+  border-left: 2px solid #119da4;
+}
+
+
+.colores-title p {
+
+  margin: 0 0 15px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  color: #119da4;
+}
+
+
+.colores-title h1 {
+
+  margin: 0;
+
+  font-size: clamp(70px, 10vw, 160px);
+
+  line-height: 0.8;
+
+  font-weight: 800;
+
+  letter-spacing: -7px;
+
+  text-transform: uppercase;
+}
+
+
+.colores-intro {
+
+  max-width: 320px;
+}
+
+
+.colores-intro p {
+
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  opacity: 0.7;
+}
+
+
+/* =========================
+   PALETA
+========================= */
+
+.paleta {
+
+  width: 100%;
+}
+
+
+.paleta-label {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid rgba(242, 242, 242, 0.2);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #119da4;
+}
+
+
+/* =========================
+   BARRAS
+========================= */
+
+.colores-barras {
+
+  display: flex;
+
+  width: 100%;
+
+  height: 620px;
+
+  overflow: hidden;
+}
+
+
+.color-barra {
+
+  position: relative;
+
+  flex: 1;
+
+  min-width: 0;
+
+  background-color: var(--color);
+
+  color: #f2f2f2;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition:
+    flex 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* Cuando hacemos hover */
+
+.color-barra:hover {
+
+  flex: 2.7;
+}
+
+
+/* =========================
+   NÚMERO
+========================= */
+
+.barra-number {
+
+  position: absolute;
+
+  top: 20px;
+  left: 20px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  z-index: 3;
+}
+
+
+/* =========================
+   INFORMACIÓN BASE
+========================= */
+
+.barra-base {
+
+  position: absolute;
+
+  bottom: 20px;
+
+  left: 20px;
+  right: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  z-index: 3;
+}
+
+
+.barra-nombre {
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+
+  writing-mode: vertical-rl;
+
+  transform: rotate(180deg);
+}
+
+
+.barra-hex {
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  opacity: 0.7;
+}
+
+
+/* =========================
+   INFORMACIÓN HOVER
+========================= */
+
+.barra-info {
+
+  position: absolute;
+
+  inset: 0;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  background-color: var(--color);
+
+  opacity: 0;
+
+  transform: translateY(30px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.4s ease;
+
+  z-index: 5;
+}
+
+
+.color-barra:hover .barra-info {
+
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+
+/* =========================
+   INFO SUPERIOR
+========================= */
+
+.barra-info-top {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.barra-info-content {
+
+  max-width: 400px;
+
+  margin-bottom: 10px;
+}
+
+
+.barra-info-content h2 {
+
+  margin: 0 0 15px;
+
+  font-size: clamp(35px, 4vw, 65px);
+
+  line-height: 0.9;
+
+  letter-spacing: -3px;
+
+  text-transform: uppercase;
+}
+
+
+.barra-info-content strong {
+
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 15px;
+
+  letter-spacing: 2px;
+}
+
+
+.barra-info-content > span {
+
+  display: block;
+
+  margin-bottom: 25px;
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+
+  opacity: 0.7;
+}
+
+
+.barra-info-content p {
+
+  max-width: 350px;
+
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  opacity: 0.85;
+}
+
+
+/* =========================
+   CONTRASTE AUTOMÁTICO
+========================= */
+
+/*
+   Colores claros necesitan texto oscuro.
+*/
+
+.color-barra:nth-child(3) .barra-info,
+.color-barra:nth-child(4) .barra-info{
+
+  color: #f2f2f2;
+}
+
+
+.color-barra:nth-child(3) .barra-number,
+.color-barra:nth-child(4) .barra-number {
+
+  color: #f2f2f2;
+}
+
+
+.color-barra:nth-child(5) {
+
+  color: #030301;
+}
+
+
+/* =========================
+   SECCIÓN INFERIOR
+========================= */
+
+.colores-bottom {
+
+  display: grid;
+
+  grid-template-columns: 120px 1fr 320px;
+
+  gap: 40px;
+
+  padding: 100px 0;
+
+  border-bottom: 1px solid rgba(242, 242, 242, 0.2);
+}
+
+
+.bottom-number {
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #0fff95;
+}
+
+
+.bottom-content > span {
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #119da4;
+}
+
+
+.bottom-content h2 {
+
+  margin: 20px 0 0;
+
+  font-size: clamp(45px, 6vw, 90px);
+
+  line-height: 0.85;
+
+  letter-spacing: -4px;
+
+  text-transform: uppercase;
+}
+
+
+.bottom-content strong {
+
+  color: #0fff95;
+
+  font-weight: inherit;
+}
+
+
+.bottom-description {
+
+  align-self: end;
+}
+
+
+.bottom-description p {
+
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  opacity: 0.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.colores-footer {
+
+  margin-top: 30px;
+}
+
+
+.colores-footer > div {
+
+  width: 100%;
+
+  height: 1px;
+
+  background-color: #119da4;
+}
+
+
+.colores-footer section {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding-top: 15px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+.colores-footer p {
+
+  margin: 0;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .colores {
+
+    padding: 80px 5vw;
+  }
+
+
+  .colores-header {
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+
+  .colores-title {
+
+    padding-left: 20px;
+  }
+
+
+  .colores-title h1 {
+
+    font-size: clamp(60px, 14vw, 110px);
+
+    letter-spacing: -5px;
+  }
+
+
+  .colores-barras {
+
+    height: 500px;
+  }
+
+
+  .color-barra:hover {
+
+    flex: 3;
+  }
+
+
+  .colores-bottom {
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .colores {
+
+    padding: 60px 20px 50px;
+  }
+
+
+  .colores-header {
+
+    margin-bottom: 60px;
+  }
+
+
+  .colores-title h1 {
+
+    font-size: clamp(55px, 15vw, 90px);
+
+    letter-spacing: -4px;
+  }
+
+
+  /*
+     En móvil las barras pasan a ser
+     horizontales para facilitar la interacción.
+  */
+
+  .colores-barras {
+
+    flex-direction: column;
+
+    height: auto;
+  }
+
+
+  .color-barra {
+
+    min-height: 100px;
+
+    flex: none;
+
+    transition:
+      min-height 0.4s ease;
+  }
+
+
+  .color-barra:hover {
+
+    flex: none;
+
+    min-height: 330px;
+  }
+
+
+  .barra-base {
+
+    top: 20px;
+    bottom: auto;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
+  }
+
+
+  .barra-nombre {
+
+    writing-mode: horizontal-tb;
+
+    transform: none;
+
+    font-size: 11px;
+  }
+
+
+  .barra-info {
+
+    padding: 20px;
+
+    padding-top: 70px;
+  }
+
+
+  .barra-info-content h2 {
+
+    font-size: 40px;
+
+    letter-spacing: -2px;
+  }
+
+
+  .colores-bottom {
+
+    padding: 70px 0;
+  }
+
+
+  .bottom-content h2 {
+
+    font-size: 50px;
+
+    letter-spacing: -2px;
+  }
+
+
+  .colores-footer section {
+
+    font-size: 7px;
+  }
+
+}

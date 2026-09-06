@@ -43,6 +43,12 @@ function Navbar() {
                 Usos incorrectos
               </a>
             </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="#colores">
+                Colores
+              </a>
+            </li>
           </ul>
 
         </div>

@@ -5,6 +5,7 @@ import Navbar from "./componentes/Navbar";
 import Personalidad from './componentes/Personalidad'
 import Logotipo from './componentes/Logotipo'
 import Usos from './componentes/Usos'
+import Colores from './componentes/Colores'
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
       <Personalidad />
       <Logotipo />
       <Usos />
+      <Colores />
     </>
   )
 }
