@@ -147,15 +147,12 @@ function Logotipo() {
                         <h2>
                             Construcción
                             <br />
-                            visual
+                            del ícono
                         </h2>
 
                         <div className="construction-placeholder">
-                            <span>+</span>
-                            <p>
-                                Agregar aquí la construcción
-                                geométrica del logotipo.
-                            </p>
+                            
+                            <img src="src/imagenes/Zyntra-icono.svg" alt="icono" className="logo-real"/>
                         </div>
 
                     </div>
@@ -261,28 +258,28 @@ function Logotipo() {
                         <h2>
                             Variaciones
                             <br />
-                            del logo
+                            del ícono
                         </h2>
 
                         <div className="versions">
 
                             <div className="version">
                                 <div className="version-placeholder">
-                                    LOGO
+                                    <img src="src/imagenes/Zyntra-icono.svg" alt="icono" className="logo-real"/>
                                 </div>
                                 <span>01 / PRIMARY</span>
                             </div>
 
                             <div className="version">
                                 <div className="version-placeholder">
-                                    LOGO
+                                    <img src="src/imagenes/Zyntra-icono-redondo-negro.svg" alt="icono2" className="logo-real"/>
                                 </div>
                                 <span>02 / SECONDARY</span>
                             </div>
 
                             <div className="version">
                                 <div className="version-placeholder">
-                                    LOGO
+                                    <img src="src/imagenes/Zyntra-icono-punteado.svg" alt="icono3" className="logo-real"/>
                                 </div>
                                 <span>03 / SYMBOL</span>
                             </div>
