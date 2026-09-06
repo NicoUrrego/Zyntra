@@ -1,5 +1,162 @@
-.navbar.navbar-expand-lg.sticky-top {
 
-    border-bottom: 1px solid #0FFF95;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+/* ================================
+   NAVBAR - ZYNTRA
+   ================================ */
+
+/* Contenedor principal */
+.navbar {
+  background-color: #030301;
+  min-height: 75px;
+  padding: 10px 0;
+
+  /* Sombra sutil */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
+
+  /* Para que quede sobre el contenido */
+  z-index: 1000;
 }
+
+
+/* ================================
+   LOGO
+   ================================ */
+
+.navbar img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+
+  transition: transform 0.3s ease;
+}
+
+.navbar img:hover {
+  transform: scale(1.08);
+}
+
+
+/* ================================
+   MENÚ
+   ================================ */
+
+.navbar-nav {
+  gap: 10px;
+}
+
+.nav-link {
+  position: relative;
+
+  color: #F2F2F2 !important;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 10px 15px !important;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* Línea inferior animada */
+.nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 15px;
+  right: 15px;
+  bottom: 4px;
+
+  height: 2px;
+
+  background-color: #0FFF95;
+
+  transform: scaleX(0);
+  transform-origin: center;
+
+  transition: transform 0.3s ease;
+}
+
+
+/* Hover */
+.nav-link:hover {
+  color: #0FFF95 !important;
+
+  transform: translateY(-1px);
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+
+/* ================================
+   BOTÓN HAMBURGUESA
+   ================================ */
+
+.navbar-toggler {
+  border: 1px solid #119DA4;
+
+  padding: 7px 10px;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  border-color: #0FFF95;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(15, 255, 149, 0.2);
+}
+
+
+/* Icono del menú */
+.navbar-toggler-icon {
+  filter: brightness(0) saturate(100%)
+          invert(79%)
+          sepia(84%)
+          saturate(500%)
+          hue-rotate(105deg);
+}
+
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+
+@media (max-width: 991px) {
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-collapse {
+    margin-top: 15px;
+
+    padding: 15px;
+
+    background-color: #19647E;
+
+    border-radius: 10px;
+  }
+
+  .navbar-nav {
+    gap: 0;
+  }
+
+  .nav-link {
+    padding: 12px 10px !important;
+  }
+
+  .nav-link::after {
+    left: 10px;
+    right: auto;
+
+    width: 30px;
+  }
+}
+

@@ -1,0 +1,176 @@
+/* ================================= HEADER - ZYNTRA ================================= */
+header {
+    position: relative;
+    min-height: calc(100vh - 75px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 30px;
+    background-color: #030301;
+    overflow: hidden;
+}
+
+/* ================================= EFECTO DE FONDO ================================= */
+header::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -200px;
+    right: -150px;
+    background-color: #19647E;
+    border-radius: 50%;
+    opacity: 0.15;
+    filter: blur(100px);
+    pointer-events: none;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    bottom: -200px;
+    left: -100px;
+    background-color: #119DA4;
+    border-radius: 50%;
+    opacity: 0.12;
+    filter: blur(100px);
+    pointer-events: none;
+}
+
+/* ================================= LOGOTIPO ================================= */
+.logotipo {
+    position: relative;
+    z-index: 1;
+    width: min(500px, 80%);
+    height: auto;
+    margin-bottom: 35px;
+    object-fit: contain;
+    animation: aparecerLogo 1s ease forwards;
+}
+
+/* ================================= DESCRIPCIÓN ================================= */
+header p {
+    position: relative;
+    z-index: 1;
+    max-width: 750px;
+    margin: 0 auto;
+    color: #F2F2F2;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    font-weight: 400;
+    animation: aparecerTexto 1s ease 0.2s forwards;
+    opacity: 0;
+}
+
+/* ================================= PALABRAS / ÉNFASIS ================================= */
+header p::first-letter {
+    color: #0FFF95;
+}
+
+/* ================================= ICONO ================================= */
+.icono {
+    position: relative;
+    z-index: 1;
+    width: 110px;
+    height: 110px;
+    margin-top: 45px;
+    object-fit: contain;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    animation: aparecerIcono 1s ease 0.4s forwards;
+    opacity: 0;
+}
+
+/* Efecto al pasar el mouse */
+.icono:hover {
+    transform: rotate(8deg) scale(1.08);
+    filter: drop-shadow(0 0 8px #0FFF95) drop-shadow(0 0 20px rgba(15, 255, 149, 0.4));
+}
+
+/* ================================= ANIMACIONES ================================= */
+@keyframes aparecerLogo {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecerTexto {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aparecerIcono {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ================================= RESPONSIVE - TABLET ================================= */
+@media (max-width: 768px) {
+    header {
+        min-height: calc(100vh - 70px);
+        padding: 60px 25px;
+    }
+
+    .logotipo {
+        width: min(400px, 85%);
+        margin-bottom: 25px;
+    }
+
+    header p {
+        max-width: 600px;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .icono {
+        width: 90px;
+        height: 90px;
+        margin-top: 35px;
+    }
+}
+
+/* ================================= RESPONSIVE - MÓVIL ================================= */
+@media (max-width: 480px) {
+    header {
+        padding: 50px 20px;
+    }
+
+    .logotipo {
+        width: 85%;
+        margin-bottom: 20px;
+    }
+
+    header p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .icono {
+        width: 75px;
+        height: 75px;
+        margin-top: 30px;
+    }
+}

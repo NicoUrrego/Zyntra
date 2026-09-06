@@ -5,9 +5,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container">
 
-        <a className="navbar-brand" href="#inicio">
-          Mi Página
-        </a>
+        <img src="src/imagenes/Zyntra-redondo-verde.jpg" alt="Logo de Zyntra"/>
 
         <button
           className="navbar-toggler"
@@ -23,32 +21,8 @@ function Navbar() {
           <ul className="navbar-nav ms-auto">
 
             <li className="nav-item">
-              <a className="nav-link" href="#inicio">
-                Inicio
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a className="nav-link" href="#servicios">
-                Servicios
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a className="nav-link" href="#productos">
-                Productos
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a className="nav-link" href="#nosotros">
-                Nosotros
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a className="nav-link" href="#contacto">
-                Contacto
+              <a className="nav-link" href="#Header">
+                ¿Quienes somos?
               </a>
             </li>
 
