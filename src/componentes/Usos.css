@@ -1,0 +1,663 @@
+/* =========================
+   CONTENEDOR
+========================= */
+
+.usos {
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 110px 7vw 80px;
+
+  box-sizing: border-box;
+
+  background-color: #030301;
+  color: #f2f2f2;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.usos-header {
+
+  display: grid;
+
+  grid-template-columns: 120px 1fr 320px;
+
+  gap: 40px;
+
+  align-items: end;
+
+  margin-bottom: 90px;
+}
+
+
+.usos-index {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #0fff95;
+}
+
+
+.usos-title {
+
+  padding-left: 30px;
+
+  border-left: 2px solid #119da4;
+}
+
+
+.usos-title p {
+
+  margin: 0 0 15px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  color: #119da4;
+}
+
+
+.usos-title h1 {
+
+  margin: 0;
+
+  font-size: clamp(65px, 9vw, 150px);
+
+  line-height: 0.82;
+
+  letter-spacing: -6px;
+
+  text-transform: uppercase;
+}
+
+
+.usos-intro {
+
+  max-width: 320px;
+}
+
+
+.usos-intro p {
+
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  opacity: 0.7;
+}
+
+
+/* =========================
+   WARNING
+========================= */
+
+.usos-warning {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-bottom: 60px;
+
+  padding: 25px;
+
+  border: 1px solid #119da4;
+
+  background-color: #19647e;
+}
+
+
+.warning-symbol {
+
+  width: 55px;
+  height: 55px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #0fff95;
+
+  color: #0fff95;
+
+  font-size: 30px;
+
+  font-weight: 700;
+}
+
+
+.warning-text span {
+
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #0fff95;
+}
+
+
+.warning-text p {
+
+  margin: 0;
+
+  max-width: 700px;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.usos-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(12, 1fr);
+
+  gap: 18px;
+}
+
+
+/* =========================
+   TARJETA
+========================= */
+
+.uso-card {
+
+  grid-column: span 4;
+
+  background-color: #f2f2f2;
+
+  color: #030301;
+
+  padding: 20px;
+
+  position: relative;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+
+.uso-card:hover {
+
+  transform: translateY(-7px);
+
+  background-color: #119da4;
+
+  color: #f2f2f2;
+}
+
+
+/* =========================
+   NÚMERO
+========================= */
+
+.uso-number {
+
+  margin-bottom: 15px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  opacity: 0.5;
+}
+
+
+/* =========================
+   CONTENEDOR IMAGEN
+========================= */
+
+.uso-image {
+
+  width: 100%;
+
+  aspect-ratio: 4 / 3;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background-color: #030301;
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+.image-placeholder {
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  border: 1px dashed rgba(15, 255, 149, 0.5);
+
+  box-sizing: border-box;
+
+  color: #f2f2f2;
+}
+
+
+.image-placeholder > span {
+
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  color: #119da4;
+}
+
+
+.placeholder-icon {
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #0fff95;
+
+  color: #0fff95;
+
+  font-size: 25px;
+
+  font-weight: 200;
+}
+
+
+.image-placeholder p {
+
+  margin: 0;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #f2f2f2;
+
+  opacity: 0.7;
+}
+
+
+/* =========================
+   MARCA DE ERROR
+========================= */
+
+.error-mark {
+
+  position: absolute;
+
+  right: 12px;
+  bottom: 8px;
+
+  font-size: 35px;
+
+  font-weight: 300;
+
+  line-height: 1;
+
+  color: #ff3b3b;
+}
+
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.uso-info {
+
+  padding-top: 25px;
+}
+
+
+.uso-info > span {
+
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #119da4;
+}
+
+
+.uso-card:hover .uso-info > span {
+
+  color: #0fff95;
+}
+
+
+.uso-info h2 {
+
+  margin: 0 0 15px;
+
+  font-size: clamp(25px, 2.5vw, 38px);
+
+  line-height: 0.95;
+
+  letter-spacing: -1.5px;
+
+  text-transform: uppercase;
+}
+
+
+.uso-info p {
+
+  margin: 0;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  opacity: 0.65;
+}
+
+
+/* =========================
+   TARJETAS ESPECIALES
+========================= */
+
+/* Primera tarjeta más grande */
+
+.uso-card:nth-child(1) {
+
+  grid-column: span 6;
+}
+
+
+.uso-card:nth-child(2) {
+
+  grid-column: span 6;
+}
+
+
+/* Segunda fila */
+
+.uso-card:nth-child(3),
+.uso-card:nth-child(4),
+.uso-card:nth-child(5),
+.uso-card:nth-child(6) {
+
+  grid-column: span 3;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.usos-final {
+
+  margin-top: 100px;
+
+  padding: 70px 0;
+
+  display: grid;
+
+  grid-template-columns: 120px 1fr;
+
+  gap: 40px;
+
+  border-top: 1px solid rgba(242, 242, 242, 0.2);
+
+  border-bottom: 1px solid rgba(242, 242, 242, 0.2);
+}
+
+
+.final-number {
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #0fff95;
+}
+
+
+.final-content > span {
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  color: #119da4;
+}
+
+
+.final-content h2 {
+
+  margin: 20px 0 0;
+
+  font-size: clamp(40px, 6vw, 90px);
+
+  line-height: 0.9;
+
+  letter-spacing: -4px;
+
+  text-transform: uppercase;
+}
+
+
+.final-content strong {
+
+  color: #0fff95;
+
+  font-weight: inherit;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.usos-footer {
+
+  margin-top: 70px;
+}
+
+
+.usos-footer > div {
+
+  width: 100%;
+
+  height: 1px;
+
+  background-color: #119da4;
+}
+
+
+.usos-footer section {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding-top: 15px;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+.usos-footer p {
+
+  margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .usos-header {
+
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+
+  .usos-title {
+
+    padding-left: 20px;
+  }
+
+
+  .uso-card:nth-child(1),
+  .uso-card:nth-child(2),
+  .uso-card:nth-child(3),
+  .uso-card:nth-child(4),
+  .uso-card:nth-child(5),
+  .uso-card:nth-child(6) {
+
+    grid-column: span 6;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .usos {
+
+    padding: 60px 20px 50px;
+  }
+
+
+  .usos-header {
+
+    margin-bottom: 60px;
+  }
+
+
+  .usos-title h1 {
+
+    font-size: clamp(55px, 15vw, 90px);
+
+    letter-spacing: -4px;
+  }
+
+
+  .usos-warning {
+
+    align-items: flex-start;
+
+    padding: 20px;
+  }
+
+
+  .warning-symbol {
+
+    width: 45px;
+    height: 45px;
+
+    font-size: 22px;
+  }
+
+
+  .uso-card:nth-child(1),
+  .uso-card:nth-child(2),
+  .uso-card:nth-child(3),
+  .uso-card:nth-child(4),
+  .uso-card:nth-child(5),
+  .uso-card:nth-child(6) {
+
+    grid-column: span 12;
+  }
+
+
+  .usos-final {
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding: 50px 0;
+  }
+
+
+  .final-content h2 {
+
+    letter-spacing: -2px;
+  }
+
+
+  .usos-footer section {
+
+    font-size: 7px;
+  }
+
+}

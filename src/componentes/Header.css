@@ -50,6 +50,7 @@ header::after {
     margin-bottom: 35px;
     object-fit: contain;
     animation: aparecerLogo 1s ease forwards;
+    background-color: transparent;
 }
 
 /* ================================= DESCRIPCIÓN ================================= */

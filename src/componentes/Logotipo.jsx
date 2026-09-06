@@ -2,13 +2,13 @@ import "./Logotipo.css";
 
 function Logotipo() {
     return (
-        <section className="logotipo">
+        <section className="logotipo-section">
 
             {/* =========================
           ENCABEZADO
       ========================= */}
 
-            <header id="Logotipo" className="logotipo">
+            <header id="Logotipo" className="logotipo-header">
 
                 <div className="logotipo-index">
                     <span>03</span>

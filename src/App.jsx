@@ -4,7 +4,7 @@ import Header from './componentes/Header'
 import Navbar from "./componentes/Navbar";
 import Personalidad from './componentes/Personalidad'
 import Logotipo from './componentes/Logotipo'
-
+import Usos from './componentes/Usos'
 function App() {
 
   return (
@@ -13,6 +13,7 @@ function App() {
       <Header />
       <Personalidad />
       <Logotipo />
+      <Usos />
     </>
   )
 }

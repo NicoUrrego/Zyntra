@@ -37,7 +37,12 @@ function Navbar() {
                 Logotipo
               </a>
             </li>
-            
+
+            <li className="nav-item">
+              <a className="nav-link" href="#Usos-header">
+                Usos incorrectos
+              </a>
+            </li>
           </ul>
 
         </div>
