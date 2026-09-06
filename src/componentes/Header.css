@@ -20,7 +20,7 @@ header::before {
     height: 500px;
     top: -200px;
     right: -150px;
-    background-color: #19647E;
+    background-color: #0fff95;
     border-radius: 50%;
     opacity: 0.15;
     filter: blur(100px);
