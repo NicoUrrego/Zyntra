@@ -26,6 +26,18 @@ function Navbar() {
               </a>
             </li>
 
+            <li className="nav-item">
+              <a className="nav-link" href="#Personalidad">
+                Personalidad
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="#Logotipo">
+                Logotipo
+              </a>
+            </li>
+            
           </ul>
 
         </div>
