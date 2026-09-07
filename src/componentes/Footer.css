@@ -266,6 +266,13 @@
 .footer-cta h2 span {
 
   color: #0FFF95;
+  filter: drop-shadow(0 0 6px #0FFF95)
+        drop-shadow(0 0 16px rgba(15, 255, 149, 0.45));
+        -webkit-box-reflect: below 10px linear-gradient(
+        transparent 15%,
+        rgba(15, 255, 149, 0.16) 48%,
+        transparent 82%
+    );
 
 }
 
