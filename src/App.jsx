@@ -6,6 +6,7 @@ import Personalidad from './componentes/Personalidad'
 import Logotipo from './componentes/Logotipo'
 import Usos from './componentes/Usos'
 import Colores from './componentes/Colores'
+import Tipografia from './componentes/Tipografia'
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
       <Logotipo />
       <Usos />
       <Colores />
+      <Tipografia />
     </>
   )
 }

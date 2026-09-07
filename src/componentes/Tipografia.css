@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.tipografia {
+  min-height: 100vh;
+
+  background: #F2F2F2;
+  color: #030301;
+
+  padding: 60px;
+
+  font-family: "Space Grotesk", sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.tipografia-header {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 40px;
+
+  padding-bottom: 40px;
+
+  border-bottom: 2px solid #030301;
+}
+
+.tipografia-numero {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tipografia-label {
+  margin: 0 0 15px;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+}
+
+.tipografia-header h1 {
+  margin: 0;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: clamp(70px, 12vw, 180px);
+  line-height: 0.85;
+
+  letter-spacing: -0.07em;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.tipografia-intro {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 40px;
+
+  max-width: 1050px;
+
+  margin: 120px 0;
+}
+
+.tipografia-intro-numero {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tipografia-intro h2 {
+  margin: 0 0 30px;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: clamp(45px, 6vw, 85px);
+  line-height: 0.9;
+
+  letter-spacing: -0.06em;
+}
+
+.tipografia-intro p {
+  max-width: 750px;
+
+  margin: 0;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   MUESTRAS
+========================= */
+
+.tipografia-muestras {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+
+/* =========================
+   BLOQUES
+========================= */
+
+.tipo-principal,
+.tipo-secundaria {
+  min-height: 650px;
+
+  padding: 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* OUTFIT */
+
+.tipo-principal {
+  background: #030301;
+  color: #F2F2F2;
+}
+
+
+/* SPACE GROTESK */
+
+.tipo-secundaria {
+  background: #0FFF95;
+  color: #030301;
+}
+
+
+/* =========================
+   META
+========================= */
+
+.tipo-meta {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================
+   DISPLAY
+========================= */
+
+.tipo-display {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.tipo-nombre {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
+.tipo-letras {
+  font-family: "Outfit", sans-serif;
+
+  font-size: clamp(140px, 20vw, 280px);
+
+  line-height: 0.7;
+
+  letter-spacing: -0.12em;
+}
+
+
+.tipo-secundaria .tipo-letras {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+
+.tipo-display h3 {
+  margin: 20px 0 0;
+
+  font-size: clamp(25px, 3vw, 42px);
+
+  line-height: 1;
+
+  letter-spacing: -0.04em;
+}
+
+.tipo-principal .tipo-display h3 {
+  font-family: "Outfit", sans-serif;
+}
+
+.tipo-secundaria .tipo-display h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.tipo-info {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 30px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid currentColor;
+}
+
+.tipo-info span {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+}
+
+.tipo-info p {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   JERARQUÍA
+========================= */
+
+.jerarquia {
+  margin-top: 160px;
+}
+
+
+.jerarquia-header {
+  display: flex;
+
+  align-items: baseline;
+  justify-content: space-between;
+
+  padding-bottom: 25px;
+
+  border-bottom: 2px solid #030301;
+}
+
+.jerarquia-header span {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.jerarquia-header h2 {
+  margin: 0;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: clamp(35px, 5vw, 70px);
+
+  letter-spacing: -0.05em;
+}
+
+
+/* =========================
+   ITEMS
+========================= */
+
+.jerarquia-contenido {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.jerarquia-item {
+  display: grid;
+
+  grid-template-columns: 180px 1fr;
+
+  gap: 40px;
+
+  padding: 50px 0;
+
+  border-bottom: 1px solid rgba(3, 3, 1, 0.3);
+}
+
+
+.jerarquia-label {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+}
+
+
+/* H1 */
+
+.jerarquia-h1 {
+  margin: 0;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: clamp(60px, 8vw, 120px);
+
+  line-height: 0.85;
+
+  letter-spacing: -0.07em;
+}
+
+
+/* H2 */
+
+.jerarquia-h2 {
+  max-width: 900px;
+
+  margin: 0;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: clamp(35px, 5vw, 70px);
+
+  line-height: 0.95;
+
+  letter-spacing: -0.05em;
+}
+
+
+/* BODY */
+
+.jerarquia-body {
+  max-width: 700px;
+
+  margin: 0;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 22px;
+
+  line-height: 1.5;
+}
+
+
+/* SMALL */
+
+.jerarquia-small {
+  margin: 0;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  letter-spacing: 0.08em;
+}
+
+
+/* =========================
+   CARACTERES
+========================= */
+
+.caracteres {
+  margin-top: 160px;
+
+  padding-bottom: 80px;
+}
+
+
+.caracteres-header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: baseline;
+
+  padding-bottom: 25px;
+
+  border-bottom: 2px solid #030301;
+}
+
+
+.caracteres-header span {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.caracteres-header h2 {
+  margin: 0;
+
+  font-family: "Outfit", sans-serif;
+
+  font-size: clamp(35px, 5vw, 70px);
+
+  letter-spacing: -0.05em;
+}
+
+
+/* MUESTRAS */
+
+.caracteres-display {
+  margin: 60px 0 0;
+
+  font-size: clamp(40px, 7vw, 110px);
+
+  line-height: 1;
+
+  letter-spacing: -0.06em;
+
+  word-break: break-word;
+}
+
+
+.outfit-font {
+  font-family: "Outfit", sans-serif;
+}
+
+
+.space-font {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+
+.caracteres-numeros {
+  margin-top: 50px;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: clamp(25px, 4vw, 50px);
+
+  font-weight: 500;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .tipografia {
+    padding: 30px;
+  }
+
+
+  .tipografia-header {
+    grid-template-columns: 50px 1fr;
+
+    gap: 20px;
+  }
+
+
+  .tipografia-intro {
+    grid-template-columns: 50px 1fr;
+
+    gap: 20px;
+
+    margin: 80px 0;
+  }
+
+
+  .tipografia-muestras {
+    grid-template-columns: 1fr;
+  }
+
+
+  .tipo-principal,
+  .tipo-secundaria {
+    min-height: 550px;
+  }
+
+
+  .jerarquia-item {
+    grid-template-columns: 120px 1fr;
+
+    gap: 20px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .tipografia {
+    padding: 20px;
+  }
+
+
+  .tipografia-header h1 {
+    font-size: 70px;
+  }
+
+
+  .tipografia-intro {
+    grid-template-columns: 1fr;
+  }
+
+
+  .tipo-principal,
+  .tipo-secundaria {
+    padding: 25px;
+
+    min-height: 450px;
+  }
+
+
+  .tipo-info {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+
+  .jerarquia {
+    margin-top: 100px;
+  }
+
+
+  .jerarquia-item {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+
+  .caracteres {
+    margin-top: 100px;
+  }
+
+}
