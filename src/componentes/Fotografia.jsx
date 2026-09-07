@@ -366,6 +366,9 @@ function Fotografia() {
 
         <div
           className="visor-imagen"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Vista ampliada de la fotografía"
           onClick={() => setImagenActiva(null)}
         >
 
