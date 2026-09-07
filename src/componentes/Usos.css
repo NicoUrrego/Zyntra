@@ -29,7 +29,7 @@
 
   align-items: end;
 
-  margin-bottom: 90px;
+  margin-bottom: 20%;
 }
 
 
@@ -452,7 +452,7 @@
 
 .usos-final {
 
-  margin-top: 100px;
+  margin-top: 20%;
 
   padding: 70px 0;
 
@@ -660,4 +660,11 @@
     font-size: 7px;
   }
 
+}
+
+.uso-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
