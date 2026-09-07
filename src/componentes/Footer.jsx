@@ -146,7 +146,13 @@ function Footer() {
           <span>LO IMPOSIBLE.</span>
         </h2>
 
-        <div className="footer-cta-symbol">
+        <div
+          className="footer-cta-symbol"
+          onClick={handleBackToTop}
+          role="button"
+          tabIndex={0}
+          aria-label="Volver al inicio"
+        >
           ↗
         </div>
 
