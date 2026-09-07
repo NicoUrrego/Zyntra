@@ -177,7 +177,7 @@ function Footer() {
           COLOMBIA
         </span>
 
-        <a href="#inicio" onClick={handleBackToTop}>
+        <a>
           VOLVER ARRIBA ↑
         </a>
 
