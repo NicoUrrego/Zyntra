@@ -1,4 +1,10 @@
 import "./Logotipo.css";
+import logotipoPrincipal from "../imagenes/Zyntra-Logotipo1.png";
+import icono from "../imagenes/Zyntra-icono.svg";
+import espacioSeguro from "../imagenes/Zyntra-espacio.jpg";
+import minimo from "../imagenes/Zyntra-minimo.jpg";
+import iconoRedondoNegro from "../imagenes/Zyntra-icono-redondo-negro.svg";
+import iconoPunteado from "../imagenes/Zyntra-icono-punteado.svg";
 
 function Logotipo() {
     return (
@@ -44,7 +50,7 @@ function Logotipo() {
                 <div className="logo-placeholder">
 
                     <img
-                        src="src/imagenes/Zyntra-Logotipo1.png"
+                        src={logotipoPrincipal}
                         alt="Logotipo de la marca"
                         className="logo-real"
                     />
@@ -150,7 +156,7 @@ function Logotipo() {
 
                         <div className="construction-placeholder">
                             
-                            <img src="src/imagenes/Zyntra-icono.svg" alt="icono" className="logo-real"/>
+                            <img src={icono} alt="icono" className="logo-real"/>
                         </div>
 
                     </div>
@@ -180,7 +186,7 @@ function Logotipo() {
 
                         <div className="safe-area-placeholder">
 
-                            <img src="src/imagenes/Zyntra-espacio.jpg" alt="img" className="logo-real"></img>
+                            <img src={espacioSeguro} alt="img" className="logo-real"></img>
 
                         </div>
 
@@ -213,7 +219,7 @@ function Logotipo() {
 
                         <div className="size-placeholder">
 
-                            <img src="src/imagenes/Zyntra-minimo.jpg" alt="img" className="logo-real"></img>
+                            <img src={minimo} alt="img" className="logo-real"></img>
 
                             <div className="size-line">
                                 <span>MIN.</span>
@@ -253,21 +259,21 @@ function Logotipo() {
 
                             <div className="version">
                                 <div className="version-placeholder">
-                                    <img src="src/imagenes/Zyntra-icono.svg" alt="icono" className="logo-real"/>
+                                    <img src={icono} alt="icono" className="logo-real"/>
                                 </div>
                                 <span>01 / PRIMARY</span>
                             </div>
 
                             <div className="version">
                                 <div className="version-placeholder">
-                                    <img src="src/imagenes/Zyntra-icono-redondo-negro.svg" alt="icono2" className="logo-real"/>
+                                    <img src={iconoRedondoNegro} alt="icono2" className="logo-real"/>
                                 </div>
                                 <span>02 / SECONDARY</span>
                             </div>
 
                             <div className="version">
                                 <div className="version-placeholder">
-                                    <img src="src/imagenes/Zyntra-icono-punteado.svg" alt="icono3" className="logo-real"/>
+                                    <img src={iconoPunteado} alt="icono3" className="logo-real"/>
                                 </div>
                                 <span>03 / SYMBOL</span>
                             </div>

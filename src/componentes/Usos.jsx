@@ -1,4 +1,10 @@
 import "./Usos.css";
+import imagenEstirada from "../imagenes/Zyntra-estirado.jpg";
+import imagenInclinada from "../imagenes/Zyntra-inclinado.jpg";
+import imagenColores from "../imagenes/Zyntra-colores.jpg";
+import imagenSombra from "../imagenes/Zyntra-sombra.jpg";
+import imagenLetras from "../imagenes/Zyntra-letras.jpg";
+import imagenExplosion from "../imagenes/Zyntra-explosion.jpg";
 
 function Usos() {
   return (
@@ -71,7 +77,7 @@ function Usos() {
 
             <div className="image-placeholder">
 
-              <img src="src/imagenes/Zyntra-estirado.jpg" alt="Imagen de ejemplo" className="uso-img" />
+              <img src={imagenEstirada} alt="Imagen de ejemplo" className="uso-img" />
 
             </div>
 
@@ -113,7 +119,7 @@ function Usos() {
 
             <div className="image-placeholder">
 
-              <img src="src/imagenes/Zyntra-inclinado.jpg" alt="Imagen de ejemplo" className="uso-img" />
+              <img src={imagenInclinada} alt="Imagen de ejemplo" className="uso-img" />
 
             </div>
 
@@ -155,7 +161,7 @@ function Usos() {
 
             <div className="image-placeholder">
 
-              <img src="src/imagenes/Zyntra-colores.jpg" alt="Imagen de ejemplo" className="uso-img" />
+              <img src={imagenColores} alt="Imagen de ejemplo" className="uso-img" />
 
             </div>
 
@@ -197,7 +203,7 @@ function Usos() {
 
             <div className="image-placeholder">
 
-              <img src="src/imagenes/Zyntra-sombra.jpg" alt="Imagen de ejemplo" className="uso-img" />
+              <img src={imagenSombra} alt="Imagen de ejemplo" className="uso-img" />
 
             </div>
 
@@ -239,7 +245,7 @@ function Usos() {
 
             <div className="image-placeholder">
 
-              <img src="src/imagenes/Zyntra-letras.jpg" alt="Imagen de ejemplo" className="uso-img" />
+              <img src={imagenLetras} alt="Imagen de ejemplo" className="uso-img" />
 
             </div>
 
@@ -281,7 +287,7 @@ function Usos() {
 
             <div className="image-placeholder">
 
-              <img src="src/imagenes/Zyntra-explosion.jpg" alt="Imagen de ejemplo" className="uso-img" />
+              <img src={imagenExplosion} alt="Imagen de ejemplo" className="uso-img" />
 
             </div>
 
