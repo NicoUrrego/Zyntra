@@ -42,15 +42,25 @@
 }
 
 /* ================================= LOGOTIPO ================================= */
-.logotipo {
+.header-title {
     position: relative;
     z-index: 1;
-    width: min(500px, 80%);
-    height: auto;
+    width: 100%;
     margin-bottom: 35px;
-    object-fit: contain;
+    color: #0FFF95;
+    font-size: clamp(5rem, 15vw, 13rem);
+    line-height: 0.8;
+    font-weight: 800;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    filter: drop-shadow(0 0 6px #0FFF95)
+            drop-shadow(0 0 16px rgba(15, 255, 149, 0.45));
+    -webkit-box-reflect: below 10px linear-gradient(
+        transparent 15%,
+        rgba(15, 255, 149, 0.16) 48%,
+        transparent 82%
+    );
     animation: aparecerLogo 1s ease forwards;
-    background-color: transparent;
 }
 
 /* ================================= DESCRIPCIÓN ================================= */
@@ -58,9 +68,9 @@
     position: relative;
     z-index: 1;
     max-width: 750px;
-    margin: 0 auto;
+    margin: 109px auto 0;
     color: #F2F2F2;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     line-height: 1.8;
     font-weight: 400;
     animation: aparecerTexto 1s ease 0.2s forwards;
@@ -129,8 +139,8 @@
         padding: 60px 25px;
     }
 
-    .logotipo {
-        width: min(400px, 85%);
+    .header-title {
+        font-size: clamp(4rem, 16vw, 8rem);
         margin-bottom: 25px;
     }
 
