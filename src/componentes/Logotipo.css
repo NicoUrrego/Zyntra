@@ -3,6 +3,9 @@
 ========================= */
 
 section.logotipo-section {
+  position: relative;
+  overflow: hidden;
+
   width: 100%;
   min-height: 100vh;
 
@@ -14,6 +17,39 @@ section.logotipo-section {
   color: #f2f2f2;
 }
 
+section.logotipo-section::before,
+section.logotipo-section::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+section.logotipo-section::before {
+  width: 500px;
+  height: 500px;
+  top: -200px;
+  right: -150px;
+  background-color: #0fff95;
+  opacity: 0.15;
+}
+
+section.logotipo-section::after {
+  width: 400px;
+  height: 400px;
+  bottom: -200px;
+  left: -100px;
+  background-color: #119da4;
+  opacity: 0.12;
+}
+
+section.logotipo-section > * {
+  position: relative;
+  z-index: 1;
+}
+
 
 /* =========================
    HEADER
@@ -21,14 +57,11 @@ section.logotipo-section {
 
 .logotipo-header {
   display: grid;
-
   grid-template-columns: 120px 1fr 320px;
-
   gap: 40px;
-
   align-items: end;
-
-  margin-bottom: 100px;
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 
 
@@ -715,6 +748,14 @@ section.logotipo-section {
 }
 
 
+.logo-real {
+  width: min(500px, 70%);
+  height: auto;
+  object-fit: contain;
+  border-radius: 24px;
+}
+
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -837,10 +878,4 @@ section.logotipo-section {
     font-size: 7px;
   }
 
-}
-
-.logo-real {
-  width: min(500px, 70%);
-  height: auto;
-  object-fit: contain;
 }

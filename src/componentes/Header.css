@@ -16,28 +16,28 @@
 .header::before {
     content: "";
     position: absolute;
-    width: 500px;
-    height: 500px;
-    top: -200px;
-    right: -150px;
+    width: 850px;
+    height: 850px;
+    top: -340px;
+    right: -240px;
     background-color: #0fff95;
     border-radius: 50%;
-    opacity: 0.15;
-    filter: blur(100px);
+    opacity: 0.24;
+    filter: blur(175px);
     pointer-events: none;
 }
 
 .header::after {
     content: "";
     position: absolute;
-    width: 400px;
-    height: 400px;
-    bottom: -200px;
-    left: -100px;
+    width: 700px;
+    height: 700px;
+    bottom: -340px;
+    left: -190px;
     background-color: #119DA4;
     border-radius: 50%;
-    opacity: 0.12;
-    filter: blur(100px);
+    opacity: 0.2;
+    filter: blur(175px);
     pointer-events: none;
 }
 
@@ -66,12 +66,6 @@
     animation: aparecerTexto 1s ease 0.2s forwards;
     opacity: 0;
 }
-
-/* ================================= PALABRAS / ÉNFASIS ================================= */
-.header p::first-letter {
-    color: #0FFF95;
-}
-
 /* ================================= ICONO ================================= */
 .icono {
     position: relative;
