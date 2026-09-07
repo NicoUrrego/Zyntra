@@ -91,8 +91,7 @@ function Logotipo() {
                         <div className="logo-card-line"></div>
 
                         <p>
-                            Agrega aquí la descripción del concepto,
-                            inspiración y significado detrás del logotipo.
+                            Se inspira en la interfaz digital, los gráficos retro-futuristas de la cultura geek/gamer y los códigos de programación donde las líneas diagonales evocan velocidad y evolución constante.
                         </p>
 
                     </div>
@@ -121,8 +120,7 @@ function Logotipo() {
                         </h2>
 
                         <p>
-                            Describe aquí qué representa el logotipo
-                            y cómo se relaciona con los valores de la marca.
+                            La tipografía robusta e industrial proyecta la solidez técnica del software, mientras que la ruptura audaz en la "Z" refleja la creatividad disruptiva y la pasión por salirse de lo convencional.
                         </p>
 
                     </div>
@@ -182,16 +180,11 @@ function Logotipo() {
 
                         <div className="safe-area-placeholder">
 
-                            <div className="safe-area-box">
-                                <span>LOGO</span>
-                            </div>
+                            <img src="src/imagenes/Zyntra-espacio.jpg" alt="img" className="logo-real"></img>
 
                         </div>
 
-                        <p>
-                            Define aquí el espacio mínimo que debe
-                            mantenerse alrededor del logotipo.
-                        </p>
+                       
 
                     </div>
 
@@ -220,21 +213,16 @@ function Logotipo() {
 
                         <div className="size-placeholder">
 
-                            <div className="size-logo">
-                                LOGO
-                            </div>
+                            <img src="src/imagenes/Zyntra-minimo.jpg" alt="img" className="logo-real"></img>
 
                             <div className="size-line">
                                 <span>MIN.</span>
-                                <span>_____ px</span>
+                                <span>150 px</span>
                             </div>
 
                         </div>
 
-                        <p>
-                            Especifica aquí el tamaño mínimo
-                            recomendado para el uso del logotipo.
-                        </p>
+            
 
                     </div>
 
