@@ -615,7 +615,7 @@
 
   .usos-header {
 
-    grid-template-columns: 100px minmax(0, 1fr) minmax(220px, 320px);
+    grid-template-columns: 100px minmax(0, 1fr);
 
     gap: 32px;
   }
@@ -629,6 +629,15 @@
   .usos-title {
 
     padding-left: 20px;
+  }
+
+
+  .usos-intro {
+
+    grid-column: 2;
+
+    margin-top: 10px;
+
   }
 
 
@@ -662,6 +671,13 @@
 
   .usos-intro {
     padding-left: 0;
+  }
+
+
+  .usos-intro {
+
+    grid-column: auto;
+
   }
 
 

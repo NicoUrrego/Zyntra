@@ -219,7 +219,7 @@ function Usos() {
 
             <p>
               No añadir sombras, brillos, degradados,
-              contornos u otros efectos al logotipo.
+              contornos u otros efectos diferentes al apartado visual.
             </p>
 
           </div>
