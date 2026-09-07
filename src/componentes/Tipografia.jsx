@@ -6,7 +6,7 @@ function Tipografia() {
 
       {/* HEADER */}
       <header className="tipografia-header">
-        <span className="tipografia-numero">05</span>
+        <span className="tipografia-numero">06</span>
 
         <div>
           <p className="tipografia-label">IDENTIDAD VISUAL</p>

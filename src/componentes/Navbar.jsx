@@ -49,6 +49,18 @@ function Navbar() {
                 Colores
               </a>
             </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="#tipografia">
+                Tipografía
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="#fotografia">
+                Fotografía
+              </a>
+            </li>
           </ul>
 
         </div>

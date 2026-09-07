@@ -7,6 +7,7 @@ import Logotipo from './componentes/Logotipo'
 import Usos from './componentes/Usos'
 import Colores from './componentes/Colores'
 import Tipografia from './componentes/Tipografia'
+import Fotografia from './componentes/Fotografia';
 function App() {
 
   return (
@@ -18,6 +19,7 @@ function App() {
       <Usos />
       <Colores />
       <Tipografia />
+      <Fotografia  />
     </>
   )
 }
