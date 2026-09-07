@@ -569,7 +569,7 @@
   align-items: center;
   justify-content: center;
 
-  padding: 40px;
+  padding: 40px 24px;
 
   background: rgba(3, 3, 1, 0.96);
 
@@ -590,7 +590,8 @@
   width: auto;
   height: auto;
 
-  max-width: 92vw;
+  width: min(100%, 1200px);
+  max-width: 94vw;
   max-height: 90vh;
 
   display: flex;
@@ -608,15 +609,19 @@
 
 .visor-contenido img {
 
-  max-width: 92vw;
-  max-height: 85vh;
-
   width: auto;
+  max-width: 100%;
+  max-height: calc(90vh - 70px);
+
   height: auto;
 
   object-fit: contain;
 
   display: block;
+
+  opacity: 1;
+
+  transform: none;
 
   box-shadow:
     0 20px 80px rgba(0, 0, 0, 0.6);
@@ -711,6 +716,11 @@
 .foto {
 
   cursor: pointer;
+}
+
+.foto:focus-visible {
+  outline: 2px solid #0FFF95;
+  outline-offset: -2px;
 }
 
 

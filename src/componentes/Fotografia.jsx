@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import "./Fotografia.css";
 import imagen01 from "../imagenes/Zyntra-pin.png";
 import imagen02 from "../imagenes/Zyntra-cartel.png";
@@ -13,6 +14,17 @@ import imagen10 from "../imagenes/Zyntra-fondo.png";
 import imagen11 from "../imagenes/Zyntra-buzo.jpg";
 function Fotografia() {
   const [imagenActiva, setImagenActiva] = useState(null);
+
+  const abrirImagen = (src, numero, tipo) => {
+    setImagenActiva({ src, numero, tipo });
+  };
+
+  const activarConTeclado = (e, src, numero, tipo) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      abrirImagen(src, numero, tipo);
+    }
+  };
 
   // Cerrar el visor presionando ESC
   useEffect(() => {
@@ -112,13 +124,10 @@ function Fotografia() {
 
         <figure
           className="foto foto-grande"
-          onClick={() =>
-            setImagenActiva({
-              src: imagen01,
-              numero: "01",
-              tipo: "HERO IMAGE"
-            })
-          }
+          tabIndex="0"
+          role="button"
+          onClick={() => abrirImagen(imagen01, "01", "HERO IMAGE")}
+          onKeyDown={(e) => activarConTeclado(e, imagen01, "01", "HERO IMAGE")}
         >
 
           <img
@@ -141,13 +150,10 @@ function Fotografia() {
 
         <figure
           className="foto foto-vertical"
-          onClick={() =>
-            setImagenActiva({
-              src: imagen02,
-              numero: "02",
-              tipo: "VERTICAL"
-            })
-          }
+          tabIndex="0"
+          role="button"
+          onClick={() => abrirImagen(imagen02, "02", "VERTICAL")}
+          onKeyDown={(e) => activarConTeclado(e, imagen02, "02", "VERTICAL")}
         >
 
           <img
@@ -170,13 +176,10 @@ function Fotografia() {
 
         <figure
           className="foto foto-pequena"
-          onClick={() =>
-            setImagenActiva({
-              src: imagen03,
-              numero: "03",
-              tipo: "DETAIL"
-            })
-          }
+          tabIndex="0"
+          role="button"
+          onClick={() => abrirImagen(imagen03, "03", "DETAIL")}
+          onKeyDown={(e) => activarConTeclado(e, imagen03, "03", "DETAIL")}
         >
 
           <img
@@ -199,13 +202,10 @@ function Fotografia() {
 
         <figure
           className="foto foto-horizontal"
-          onClick={() =>
-            setImagenActiva({
-              src: imagen04,
-              numero: "04",
-              tipo: "LANDSCAPE"
-            })
-          }
+          tabIndex="0"
+          role="button"
+          onClick={() => abrirImagen(imagen04, "04", "LANDSCAPE")}
+          onKeyDown={(e) => activarConTeclado(e, imagen04, "04", "LANDSCAPE")}
         >
 
           <img
@@ -222,13 +222,10 @@ function Fotografia() {
         
         <figure
           className="foto foto-horizontal"
-          onClick={() =>
-            setImagenActiva({
-              src: imagen10,
-              numero: "05",
-              tipo: "LANDSCAPE"
-            })
-          }
+          tabIndex="0"
+          role="button"
+          onClick={() => abrirImagen(imagen10, "05", "LANDSCAPE")}
+          onKeyDown={(e) => activarConTeclado(e, imagen10, "05", "LANDSCAPE")}
         >
 
           <img
@@ -250,13 +247,10 @@ function Fotografia() {
 
         <figure
           className="foto foto-pequena"
-          onClick={() =>
-            setImagenActiva({
-              src: imagen05,
-              numero: "05",
-              tipo: "DETAIL"
-            })
-          }
+          tabIndex="0"
+          role="button"
+          onClick={() => abrirImagen(imagen05, "06", "DETAIL")}
+          onKeyDown={(e) => activarConTeclado(e, imagen05, "06", "DETAIL")}
         >
 
           <img
@@ -279,13 +273,10 @@ function Fotografia() {
 
         <figure
           className="foto foto-panoramica"
-          onClick={() =>
-            setImagenActiva({
-              src: imagen06,
-              numero: "06",
-              tipo: "PANORAMIC"
-            })
-          }
+          tabIndex="0"
+          role="button"
+          onClick={() => abrirImagen(imagen06, "07", "PANORAMIC")}
+          onKeyDown={(e) => activarConTeclado(e, imagen06, "07", "PANORAMIC")}
         >
 
           <img
@@ -302,13 +293,10 @@ function Fotografia() {
 
         <figure
           className="foto foto-vertical"
-          onClick={() =>
-            setImagenActiva({
-              src: imagen07,
-              numero: "07",
-              tipo: "VERTICAL"
-            })
-          }
+          tabIndex="0"
+          role="button"
+          onClick={() => abrirImagen(imagen07, "08", "VERTICAL")}
+          onKeyDown={(e) => activarConTeclado(e, imagen07, "08", "VERTICAL")}
         >
 
           <img
@@ -325,13 +313,10 @@ function Fotografia() {
 
         <figure
           className="foto foto-grande"
-          onClick={() =>
-            setImagenActiva({
-              src: imagen08,
-              numero: "08",
-              tipo: "HERO IMAGE"
-            })
-          }
+          tabIndex="0"
+          role="button"
+          onClick={() => abrirImagen(imagen08, "09", "HERO IMAGE")}
+          onKeyDown={(e) => activarConTeclado(e, imagen08, "09", "HERO IMAGE")}
         >
 
           <img
@@ -348,13 +333,10 @@ function Fotografia() {
 
         <figure
           className="foto foto-grande"
-          onClick={() =>
-            setImagenActiva({
-              src: imagen09,
-              numero: "09",
-              tipo: "HERO IMAGE"
-            })
-          }
+          tabIndex="0"
+          role="button"
+          onClick={() => abrirImagen(imagen09, "10", "HERO IMAGE")}
+          onKeyDown={(e) => activarConTeclado(e, imagen09, "10", "HERO IMAGE")}
         >
 
           <img
@@ -371,13 +353,10 @@ function Fotografia() {
 
         <figure
           className="foto foto-vertical"
-          onClick={() =>
-            setImagenActiva({
-              src: imagen11,
-              numero: "11",
-              tipo: "VERTICAL"
-            })
-          }
+          tabIndex="0"
+          role="button"
+          onClick={() => abrirImagen(imagen11, "11", "VERTICAL")}
+          onKeyDown={(e) => activarConTeclado(e, imagen11, "11", "VERTICAL")}
         >
 
           <img
@@ -479,17 +458,23 @@ function Fotografia() {
           VISOR / LIGHTBOX
       ================================================= */}
 
-      {imagenActiva && (
+      {imagenActiva && createPortal(
+        (
 
         <div
           className="visor-imagen"
           role="dialog"
           aria-modal="true"
           aria-label="Vista ampliada de la fotografía"
-          onClick={() => setImagenActiva(null)}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              setImagenActiva(null);
+            }
+          }}
         >
 
           <button
+            type="button"
             className="visor-cerrar"
             onClick={() => setImagenActiva(null)}
             aria-label="Cerrar imagen"
@@ -525,6 +510,8 @@ function Fotografia() {
 
         </div>
 
+        ),
+        document.body
       )}
 
     </section>
