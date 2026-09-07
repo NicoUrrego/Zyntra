@@ -21,6 +21,16 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background: var(--color-black);
   color: var(--color-gray);

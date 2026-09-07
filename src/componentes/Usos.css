@@ -134,6 +134,7 @@
   width: 100%;
   min-width: 0;
   max-width: 320px;
+  padding-left: 16px;
 }
 
 
@@ -143,9 +144,9 @@
 
   overflow-wrap: break-word;
 
-  font-size: 14px;
+  font-size: 19px;
 
-  line-height: 1.7;
+  line-height: 1.4;
 
   opacity: 0.7;
 }
@@ -498,7 +499,8 @@
 
 .usos-final {
 
-  margin-top: 20%;
+  margin-top: 15%;
+  margin-bottom: 14%;
 
   padding: 70px 0;
 
@@ -615,7 +617,12 @@
 
     grid-template-columns: 100px minmax(0, 1fr) minmax(220px, 320px);
 
-    gap: 25px;
+    gap: 32px;
+  }
+
+  .usos-intro p {
+    font-size: 16px;
+    line-height: 1.55;
   }
 
 
@@ -651,6 +658,10 @@
     grid-template-columns: 1fr;
 
     margin-bottom: 60px;
+  }
+
+  .usos-intro {
+    padding-left: 0;
   }
 
 
