@@ -1,6 +1,6 @@
 
 import "./Footer.css";
-
+import logo from "../imagenes/zyntra-logo.png";
 function Footer() {
   const handleBackToTop = (event) => {
     event.preventDefault();
@@ -30,7 +30,7 @@ function Footer() {
           <div>
 
             <img
-              src="src/imagenes/zyntra-logo.png"
+              src={logo}
               alt="Zyntra"
               className="footer-logo"
             />
