@@ -6,7 +6,11 @@ import imagen03 from "../imagenes/Zyntra-app.png";
 import imagen04 from "../imagenes/Zyntra-termo.png";
 import imagen05 from "../imagenes/Zyntra-mochila.png";
 import imagen06 from "../imagenes/Zyntra-reloj.png";
-
+import imagen07 from "../imagenes/Zyntra-modelo1.png";
+import imagen08 from "../imagenes/Zyntra-medalla.jpg";
+import imagen09 from "../imagenes/Zyntra-cristal.jpg";
+import imagen10 from "../imagenes/Zyntra-fondo.png";
+import imagen11 from "../imagenes/Zyntra-buzo.jpg";
 function Fotografia() {
   const [imagenActiva, setImagenActiva] = useState(null);
 
@@ -215,7 +219,29 @@ function Fotografia() {
           </figcaption>
 
         </figure>
+        
+        <figure
+          className="foto foto-horizontal"
+          onClick={() =>
+            setImagenActiva({
+              src: imagen10,
+              numero: "05",
+              tipo: "LANDSCAPE"
+            })
+          }
+        >
 
+          <img
+            src={imagen10}
+            alt="Representación visual de la marca"
+          />
+
+          <figcaption>
+            <span>05</span>
+            <span>LANDSCAPE</span>
+          </figcaption>
+
+        </figure>
 
         {/* ==========================================
             IMAGEN PEQUEÑA
@@ -239,7 +265,7 @@ function Fotografia() {
           />
 
           <figcaption>
-            <span>05</span>
+            <span>06</span>
             <span>DETAIL</span>
           </figcaption>
 
@@ -268,12 +294,103 @@ function Fotografia() {
           />
 
           <figcaption>
-            <span>06</span>
+            <span>07</span>
             <span>PANORAMIC</span>
           </figcaption>
 
         </figure>
 
+        <figure
+          className="foto foto-vertical"
+          onClick={() =>
+            setImagenActiva({
+              src: imagen07,
+              numero: "07",
+              tipo: "VERTICAL"
+            })
+          }
+        >
+
+          <img
+            src={imagen07}
+            alt="Representación visual de la marca"
+          />
+
+          <figcaption>
+            <span>08</span>
+            <span>VERTICAL</span>
+          </figcaption>
+
+        </figure>
+
+        <figure
+          className="foto foto-grande"
+          onClick={() =>
+            setImagenActiva({
+              src: imagen08,
+              numero: "08",
+              tipo: "HERO IMAGE"
+            })
+          }
+        >
+
+          <img
+            src={imagen08}
+            alt="Representación visual de la marca"
+          />
+
+          <figcaption>
+            <span>09</span>
+            <span>HERO IMAGE</span>
+          </figcaption>
+
+        </figure>
+
+        <figure
+          className="foto foto-grande"
+          onClick={() =>
+            setImagenActiva({
+              src: imagen09,
+              numero: "09",
+              tipo: "HERO IMAGE"
+            })
+          }
+        >
+
+          <img
+            src={imagen09}
+            alt="Representación visual de la marca"
+          />
+
+          <figcaption>
+            <span>10</span>
+            <span>HERO IMAGE</span>
+          </figcaption>
+
+        </figure>
+
+        <figure
+          className="foto foto-vertical"
+          onClick={() =>
+            setImagenActiva({
+              src: imagen11,
+              numero: "11",
+              tipo: "VERTICAL"
+            })
+          }
+        >
+
+          <img
+            src={imagen11}
+            alt="Representación visual de la marca"
+          />
+
+          <figcaption>
+            <span>11</span>
+            <span>VERTICAL</span>
+          </figcaption>
+
+        </figure>
       </div>
 
 
