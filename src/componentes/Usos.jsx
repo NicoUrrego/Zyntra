@@ -71,15 +71,7 @@ function Usos() {
 
             <div className="image-placeholder">
 
-              <span>01</span>
-
-              <div className="placeholder-icon">
-                +
-              </div>
-
-              <p>
-                AGREGAR IMAGEN
-              </p>
+              <img src="src/imagenes/Zyntra-estirado.jpg" alt="Imagen de ejemplo" className="uso-img" />
 
             </div>
 
@@ -121,15 +113,7 @@ function Usos() {
 
             <div className="image-placeholder">
 
-              <span>02</span>
-
-              <div className="placeholder-icon">
-                +
-              </div>
-
-              <p>
-                AGREGAR IMAGEN
-              </p>
+              <img src="src/imagenes/Zyntra-inclinado.jpg" alt="Imagen de ejemplo" className="uso-img" />
 
             </div>
 
@@ -171,15 +155,7 @@ function Usos() {
 
             <div className="image-placeholder">
 
-              <span>03</span>
-
-              <div className="placeholder-icon">
-                +
-              </div>
-
-              <p>
-                AGREGAR IMAGEN
-              </p>
+              <img src="src/imagenes/Zyntra-colores.jpg" alt="Imagen de ejemplo" className="uso-img" />
 
             </div>
 
@@ -221,15 +197,7 @@ function Usos() {
 
             <div className="image-placeholder">
 
-              <span>04</span>
-
-              <div className="placeholder-icon">
-                +
-              </div>
-
-              <p>
-                AGREGAR IMAGEN
-              </p>
+              <img src="src/imagenes/Zyntra-sombra.jpg" alt="Imagen de ejemplo" className="uso-img" />
 
             </div>
 
@@ -271,15 +239,7 @@ function Usos() {
 
             <div className="image-placeholder">
 
-              <span>05</span>
-
-              <div className="placeholder-icon">
-                +
-              </div>
-
-              <p>
-                AGREGAR IMAGEN
-              </p>
+              <img src="src/imagenes/Zyntra-letras.jpg" alt="Imagen de ejemplo" className="uso-img" />
 
             </div>
 
@@ -321,15 +281,7 @@ function Usos() {
 
             <div className="image-placeholder">
 
-              <span>06</span>
-
-              <div className="placeholder-icon">
-                +
-              </div>
-
-              <p>
-                AGREGAR IMAGEN
-              </p>
+              <img src="src/imagenes/Zyntra-explosion.jpg" alt="Imagen de ejemplo" className="uso-img" />
 
             </div>
 
@@ -341,17 +293,17 @@ function Usos() {
 
           <div className="uso-info">
 
-            <span>NO INVADIR</span>
+            <span>NO FONDOS DISRUPTIVOS</span>
 
             <h2>
-              Ignorar el
+              FONDOS
               <br />
-              área segura
+              INAPROPIADOS
             </h2>
 
             <p>
-              Mantener siempre el espacio de seguridad
-              definido alrededor del logotipo.
+              No colocar el logotipo sobre fondos
+              que dificulten su legibilidad o que no sigan la identidad visual de la marca.
             </p>
 
           </div>

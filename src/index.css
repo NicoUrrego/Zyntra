@@ -1,3 +1,43 @@
-html {
-  scroll-behavior: smooth;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-principal: "Outfit", sans-serif;
+  --font-secundaria: "Space Grotesk", sans-serif;
+
+  --color-turquoise: #119DA4;
+  --color-blue: #19647E;
+  --color-black: #030301;
+  --color-neon: #0FFF95;
+  --color-gray: #F2F2F2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-black);
+  color: var(--color-gray);
+  font-family: var(--font-secundaria);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-principal);
+}
+
+p,
+span,
+a,
+button,
+li {
+  font-family: var(--font-secundaria);
 }
