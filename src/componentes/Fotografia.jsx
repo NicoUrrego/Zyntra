@@ -39,7 +39,7 @@ function Fotografia() {
   }, [imagenActiva]);
 
   return (
-    <section className="fotografia">
+    <section id="fotografia" className="fotografia">
 
       {/* =========================
           ENCABEZADO
