@@ -1,11 +1,12 @@
 import './Navbar.css';
+import logo from '../imagenes/zyntra-logo.png';
 
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container">
 
-        <img src="./src/imagenes/zyntra-logo.png" alt="Logo de Zyntra"/>
+        <img src={logo} alt="Logo de Zyntra"/>
 
         <button
           className="navbar-toggler"
