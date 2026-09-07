@@ -2,6 +2,14 @@
 import "./Footer.css";
 
 function Footer() {
+  const handleBackToTop = (event) => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className="footer">
 
@@ -163,7 +171,7 @@ function Footer() {
           COLOMBIA
         </span>
 
-        <a href="#">
+        <a href="#inicio" onClick={handleBackToTop}>
           VOLVER ARRIBA ↑
         </a>
 
