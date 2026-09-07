@@ -51,3 +51,7 @@ button,
 li {
   font-family: var(--font-secundaria);
 }
+
+html {
+  scroll-behavior: smooth;
+}

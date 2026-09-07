@@ -21,7 +21,7 @@ function Navbar() {
           <ul className="navbar-nav ms-auto">
 
             <li className="nav-item">
-              <a className="nav-link" href="#Header">
+              <a className="nav-link" href="#inicio">
                 ¿Quienes somos?
               </a>
             </li>

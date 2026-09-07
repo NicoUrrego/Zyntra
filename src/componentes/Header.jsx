@@ -4,7 +4,7 @@ function Header() {
 
 
   return (
-    <header id="Header" className="header">
+    <header id="inicio" className="header">
       <h1 className="header-title">ZYNTRA</h1>
       <p>Empresa de tecnologia enfocada en el entretenimiento, diseñamos software relacionado con la cultura pop conectando con la gente a través del arte, el entrtetenimiento y la cultura geek.</p>
     </header>
