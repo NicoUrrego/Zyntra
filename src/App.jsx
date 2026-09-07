@@ -8,6 +8,7 @@ import Usos from './componentes/Usos'
 import Colores from './componentes/Colores'
 import Tipografia from './componentes/Tipografia'
 import Fotografia from './componentes/Fotografia';
+import Footer from './componentes/Footer';
 function App() {
 
   useEffect(() => {
@@ -67,6 +68,7 @@ function App() {
       <Colores />
       <Tipografia />
       <Fotografia  />
+      <Footer />
     </>
   )
 }

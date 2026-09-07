@@ -1,0 +1,514 @@
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+
+  position: relative;
+
+  background: #030301;
+
+  color: #F2F2F2;
+
+  padding: 80px 60px 25px;
+
+  overflow: hidden;
+
+}
+
+
+/* =====================================================
+   CONTENIDO PRINCIPAL
+===================================================== */
+
+.footer-contenido {
+
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    1fr
+    1fr
+    1.5fr;
+
+  gap: 50px;
+
+  padding-bottom: 80px;
+
+  border-bottom: 1px solid
+    rgba(242, 242, 242, 0.3);
+
+}
+
+
+/* =====================================================
+   MARCA
+===================================================== */
+
+.footer-marca {
+
+  display: grid;
+
+  grid-template-columns: 50px 1fr;
+
+  gap: 25px;
+
+}
+
+
+.footer-numero {
+
+  font-family:
+    var(--font-secundaria, "Space Grotesk", sans-serif);
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  opacity: 0.7;
+}
+
+
+.footer-logo {
+
+  display: block;
+
+  width: 180px;
+
+  max-width: 100%;
+
+  height: auto;
+
+  margin-bottom: 25px;
+
+}
+
+
+.footer-marca p {
+
+  margin: 0;
+
+  max-width: 250px;
+
+  font-family:
+    var(--font-secundaria, "Space Grotesk", sans-serif);
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  opacity: 0.65;
+
+}
+
+
+/* =====================================================
+   COLUMNAS
+===================================================== */
+
+.footer-columna {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+}
+
+
+.footer-titulo {
+
+  margin-bottom: 25px;
+
+  font-family:
+    var(--font-secundaria, "Space Grotesk", sans-serif);
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+
+  color: #0FFF95;
+}
+
+
+.footer-columna a {
+
+  position: relative;
+
+  width: fit-content;
+
+  margin-bottom: 12px;
+
+  color: #F2F2F2;
+
+  text-decoration: none;
+
+  font-family:
+    var(--font-secundaria, "Space Grotesk", sans-serif);
+
+  font-size: 13px;
+
+  opacity: 0.7;
+
+  transition:
+    color 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+
+}
+
+
+.footer-columna a::before {
+
+  content: "↗";
+
+  position: absolute;
+
+  left: -20px;
+
+  opacity: 0;
+
+  color: #0FFF95;
+
+  transition: opacity 0.3s ease;
+
+}
+
+
+.footer-columna a:hover {
+
+  color: #0FFF95;
+
+  opacity: 1;
+
+  transform: translateX(5px);
+
+}
+
+
+.footer-columna a:hover::before {
+
+  opacity: 1;
+
+}
+
+
+/* =====================================================
+   CONTACTO
+===================================================== */
+
+.footer-contacto p {
+
+  margin: 0 0 20px;
+
+  font-family:
+    var(--font-principal, "Outfit", sans-serif);
+
+  font-size: 25px;
+
+  line-height: 1;
+
+  letter-spacing: -0.03em;
+
+}
+
+
+.footer-contacto .footer-email {
+
+  color: #0FFF95;
+
+  opacity: 1;
+
+  font-size: 13px;
+
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.footer-cta {
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  padding: 80px 0;
+
+}
+
+
+.footer-cta h2 {
+
+  margin: 0;
+
+  font-family:
+    var(--font-principal, "Outfit", sans-serif);
+
+  font-size: clamp(70px, 12vw, 180px);
+
+  line-height: 0.78;
+
+  letter-spacing: -0.08em;
+
+  font-weight: 600;
+
+}
+
+
+.footer-cta h2 span {
+
+  color: #0FFF95;
+
+}
+
+
+.footer-cta-symbol {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 90px;
+
+  height: 90px;
+
+  border: 1px solid
+    rgba(242, 242, 242, 0.4);
+
+  border-radius: 50%;
+
+  color: #0FFF95;
+
+  font-family:
+    var(--font-principal, "Outfit", sans-serif);
+
+  font-size: 35px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+
+}
+
+
+.footer-cta-symbol:hover {
+
+  background: #0FFF95;
+
+  color: #030301;
+
+  transform: rotate(45deg);
+
+}
+
+
+/* =====================================================
+   BARRA INFERIOR
+===================================================== */
+
+.footer-bottom {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr
+    1fr
+    auto;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding-top: 20px;
+
+  font-family:
+    var(--font-secundaria, "Space Grotesk", sans-serif);
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+
+  opacity: 0.55;
+
+}
+
+
+.footer-bottom a {
+
+  color: #F2F2F2;
+
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease;
+
+}
+
+
+.footer-bottom a:hover {
+
+  color: #0FFF95;
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .footer {
+
+    padding: 60px 30px 20px;
+
+  }
+
+
+  .footer-contenido {
+
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 60px 30px;
+
+  }
+
+
+  .footer-marca {
+
+    grid-column: span 2;
+
+  }
+
+
+  .footer-cta {
+
+    padding: 70px 0;
+
+  }
+
+
+  .footer-cta h2 {
+
+    font-size: clamp(65px, 12vw, 120px);
+
+  }
+
+
+  .footer-bottom {
+
+    grid-template-columns:
+      1fr 1fr;
+
+  }
+
+}
+
+
+/* =====================================================
+   MÓVIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .footer {
+
+    padding: 50px 20px 20px;
+
+  }
+
+
+  .footer-contenido {
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding-bottom: 50px;
+
+  }
+
+
+  .footer-marca {
+
+    grid-column: span 1;
+
+    grid-template-columns: 35px 1fr;
+
+  }
+
+
+  .footer-logo {
+
+    width: 150px;
+
+  }
+
+
+  .footer-cta {
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 40px;
+
+    padding: 60px 0;
+
+  }
+
+
+  .footer-cta h2 {
+
+    font-size: clamp(60px, 18vw, 100px);
+
+  }
+
+
+  .footer-cta-symbol {
+
+    width: 65px;
+
+    height: 65px;
+
+    font-size: 25px;
+
+  }
+
+
+  .footer-bottom {
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    line-height: 1.5;
+
+  }
+
+
+  .footer-bottom a {
+
+    grid-column: span 2;
+
+    margin-top: 10px;
+
+  }
+
+}
+
